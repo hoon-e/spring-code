@@ -3,12 +3,27 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- define dependency -->
+    <bean id="myFortune"
+          class="udemy.lecture2.demo.HappyFortuneService"/>
+
     <!-- define beans -->
     <bean id="baseballCoach"
-          class="udemy.lecture1.demo.BaseballCoach"/>
+          class="udemy.lecture1.demo.BaseballCoach">
+        <!-- constructor 설정 추가 -->
+        <constructor-arg ref="myFortune"/>
+    </bean>
 
     <bean id="trackCoach"
-          class="udemy.lecture1.demo.TrackCoach"/>
+          class="udemy.lecture1.demo.TrackCoach">
+        <constructor-arg ref="myFortune"/>
+    </bean>
+
+    <bean id="cricketCoach"
+          class="udemy.lecture2.demo.CricketCoach"> <!-- fully qualified class name -->
+        <!-- setter injection -->
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
 
     <bean id="myLoggerConfig"
           class="config.MyLoggerConfig" init-method="initLogger">

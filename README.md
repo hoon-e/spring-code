@@ -1,4 +1,4 @@
-# Spring 5 & Hibernate 연습 코드
+가# Spring 5 & Hibernate 연습 코드
 
 [Spring & Hibernate](https://www.udemy.com/course/spring-hibernate-tutorial/) 강의 코드 연습 레포지토리
 
@@ -20,3 +20,4 @@
     ```text
     Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'myCoach' available
     ```
+- 22/05/03 : Dependency Injection 개념 학습 및 데모 코드 추가
