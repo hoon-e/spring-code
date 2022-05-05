@@ -6,6 +6,28 @@ import udemy.lecture1.demo.Coach;
 public class CricketCoach implements Coach {
     private FortuneService fortuneService;
 
+    // 새로운 field를 추가한다.
+    private String emailAddress;
+    private String team;
+
+    // setter, getter method 추가
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("변수 값의 setter 메서드 안의 동작 방식 살펴보기");
+        this.emailAddress = emailAddress;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
     public CricketCoach() {
         System.out.println("argument가 없는 생성자의 동작 방식 살펴보기");
     }
