@@ -1,7 +1,6 @@
 package udemy.lecture2.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import udemy.lecture1.demo.Coach;
 
 public class SecondDemoApp {
     public static void main(String[] args) {

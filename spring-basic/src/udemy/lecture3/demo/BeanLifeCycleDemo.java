@@ -2,7 +2,6 @@ package udemy.lecture3.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import udemy.lecture1.demo.Coach;
-import udemy.lecture1.demo.TrackCoach;
 
 public class BeanLifeCycleDemo {
     public static void main(String[] args) {

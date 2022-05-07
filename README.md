@@ -1,4 +1,4 @@
-가# Spring 5 & Hibernate 연습 코드
+# Spring 5 & Hibernate 연습 코드
 
 [Spring & Hibernate](https://www.udemy.com/course/spring-hibernate-tutorial/) 강의 코드 연습 레포지토리
 
@@ -12,6 +12,8 @@
   - IntelliJ에서 src 폴더에 패키지 생성되지 않는 경우
     - 프로젝트 source 폴더로 인식하지 못해서 발생함
     - src 디렉토리 생성 후 module setting에서 src를 source directory로 설정해줌
+- 새로운 프로젝트 생성하지 않고 프로젝트 아래에 강좌 별로 모듈 프로젝트 구성 변경
+  - Module Setting > Library > lib 폴더로 라이브러리 경로 추가해주어야 상위 폴더에 있는 jar 파일들 사용 가능
 
 ## History
 - 22/05/07 : BeanScope 및 BeanLifecycle 개념 학습 및 데모 코드 추가
