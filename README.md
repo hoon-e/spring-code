@@ -14,10 +14,11 @@
     - src 디렉토리 생성 후 module setting에서 src를 source directory로 설정해줌
 
 ## History
+- 22/05/07 : BeanScope 및 BeanLifecycle 개념 학습 및 데모 코드 추가
+- 22/05/03 : Dependency Injection 개념 학습 및 데모 코드 추가
 - 22/05/02 : 기본 Spring Container 개념 학습 및 데모 코드 추가
   - xml 파일 경로 못찾는 이슈 발생 시 : ApplicationContext 파일을 src 디렉토리 가장 상위에 둔다.
   - bean context가 xml 파일에 존재하지 않는 경우 아래 에러 메세지가 발생한다.
     ```text
     Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'myCoach' available
     ```
-- 22/05/03 : Dependency Injection 개념 학습 및 데모 코드 추가
