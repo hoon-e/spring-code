@@ -8,4 +8,9 @@ public class SwimmingCoach implements Coach {
     public String getDailyWorkout() {
         return "박태환 선수처럼 열심히 훈련하세요.";
     }
+
+    @Override
+    public String getNutrition() {
+        return null;
+    }
 }

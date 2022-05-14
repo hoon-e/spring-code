@@ -6,4 +6,5 @@
 
     <!-- context component scan 추가 -->
     <context:component-scan base-package="udemy.lecture4.demo" />
+    <context:component-scan base-package="udemy.lecture5.demo" />
 </beans>
