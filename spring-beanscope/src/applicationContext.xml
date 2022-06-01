@@ -5,7 +5,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- context component scan 추가 -->
-    <context:component-scan base-package="udemy.lecture4.demo" />
-    <context:component-scan base-package="udemy.lecture5.demo" />
-    <context:component-scan base-package="udemy.lecture5.qualifier" />
+    <context:component-scan base-package="udemy.lecture8" />
 </beans>
