@@ -2,11 +2,12 @@ package udemy.lecture8;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("prototype") // 매 요청 마다 새로운 인스턴스를 생성한다.
 public class Hoone implements Human {
 
     private StudyService studyService;
@@ -15,6 +16,16 @@ public class Hoone implements Human {
     @Qualifier("algorithmStudyServiceImpl")
     public void setStudyService(StudyService studyService) {
         this.studyService = studyService;
+    }
+
+    @PostConstruct
+    public void doMyStartupStuff() {
+        System.out.println(">> Hoone: inside of doMyStartupStuff()");
+    }
+
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println(">> Hoone: inside of doMyCleanupStuff()");
     }
 
     @Override
